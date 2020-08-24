@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchiture.Domain\CleanArchitecture.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="FrequentDefect\" />
+    <Folder Include="FrequentDefect\Queries\" />
+    <Folder Include="FrequentDefect\Commands\" />
+    <Folder Include="FrequentDefect\Commands\CreateFrequentDefect\" />
+    <Folder Include="FrequentDefect\Commands\DeleteFrequentDefect\" />
+    <Folder Include="FrequentDefect\Queries\GetFrequentDefect\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.1.3" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+  </ItemGroup>
+</Project>
