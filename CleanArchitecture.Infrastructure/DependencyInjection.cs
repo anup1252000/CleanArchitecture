@@ -22,7 +22,7 @@ namespace CleanArchitecture.Infrastructure
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer("Server=tcp:cleanarchitecture.database.windows.net,1433;Initial Catalog=cleanarchitecture;Persist Security Info=False;User ID=anup;Password=Anika@2017;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer("<Connection String>");
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
